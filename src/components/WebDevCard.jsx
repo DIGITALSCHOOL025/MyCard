@@ -5,19 +5,20 @@ export default function WebDevCard() {
   if (typeof window === 'undefined') return null;
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-900 via-purple-800 to-blue-800 p-6">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-4 sm:p-6">
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
+        className="w-full max-w-md"
       >
-        <div className="max-w-md w-full rounded-3xl shadow-2xl bg-white p-10 border border-gray-100">
+        <div className="rounded-3xl shadow-xl bg-white p-8 sm:p-10 border border-gray-200">
           <div className="flex flex-col items-center">
             <motion.div
               initial={{ rotate: -10 }}
               animate={{ rotate: 0 }}
               transition={{ type: "spring", stiffness: 120 }}
-              className="w-40 h-40 rounded-full overflow-hidden border-4 border-indigo-500 shadow-xl mb-4 hover:scale-105 transition-transform duration-500"
+              className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-4 border-indigo-600 shadow-lg mb-4 hover:scale-105 transition-transform duration-500"
             >
               <img
                 src="/profile.jpg"
@@ -29,7 +30,7 @@ export default function WebDevCard() {
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="text-4xl font-extrabold text-gray-900"
+              className="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center"
             >
               Laurent Mamba
             </motion.h1>
