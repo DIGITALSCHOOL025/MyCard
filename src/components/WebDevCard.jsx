@@ -1,4 +1,4 @@
-import { Phone, Mail, Globe, Github, Linkedin, MessageCircle, FileText } from "lucide-react";
+import { Phone, Mail, Globe, Github, Linkedin, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function WebDevCard() {
@@ -38,7 +38,7 @@ export default function WebDevCard() {
               Développeur Web Freelance & Consultant Digital
             </p>
             <p className="text-center text-gray-600 dark:text-gray-400 text-sm mt-3 leading-relaxed">
-              Expert en HTML5, CSS3, JavaScript, React, Next.js, Tailwind CSS, Git & GitHub, SEO, UI/UX Design. J'accompagne les entreprises dans leur transformation numérique avec des solutions web innovantes et sur-mesure.
+              Expert en HTML5, CSS3, JavaScript, React, Next.js, Tailwind CSS, Git & GitHub, SEO, UI/UX Design. J'accompagne les entreprises dans leur transformation numérique avec des solutions web innovantes et sur-mesure. J'ai également une solide expérience en Python et CSS.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 w-full">
               <a href="tel:+243894797454" className="flex items-center justify-center bg-indigo-600 text-white rounded-lg py-2 px-4 text-sm hover:bg-indigo-700 transition">
@@ -58,9 +58,6 @@ export default function WebDevCard() {
               </a>
               <a href="#" className="flex items-center justify-center bg-purple-600 text-white rounded-lg py-2 px-4 text-sm hover:bg-purple-700 transition">
                 <Globe className="mr-2 h-4 w-4" /> Portfolio
-              </a>
-              <a href="#" className="col-span-1 sm:col-span-2 flex items-center justify-center bg-yellow-500 text-white rounded-lg py-2 px-4 text-sm hover:bg-yellow-600 transition">
-                <FileText className="mr-2 h-4 w-4" /> Voir mon CV
               </a>
             </div>
           </div>
