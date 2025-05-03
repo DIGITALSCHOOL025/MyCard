@@ -5,14 +5,14 @@ export default function WebDevCard() {
   if (typeof window === 'undefined') return null;
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-4 sm:p-6">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 p-4 sm:p-6">
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
         className="w-full max-w-md"
       >
-        <div className="rounded-3xl shadow-xl bg-white p-8 sm:p-10 border border-gray-200">
+        <div className="rounded-3xl shadow-2xl bg-white dark:bg-gray-950 p-8 sm:p-10 border border-gray-200 dark:border-gray-800">
           <div className="flex flex-col items-center">
             <motion.div
               initial={{ rotate: -10 }}
@@ -30,14 +30,14 @@ export default function WebDevCard() {
               initial={{ y: -20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center"
+              className="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white text-center"
             >
               Laurent Mamba
             </motion.h1>
             <p className="text-indigo-600 text-base font-semibold mt-1 text-center">
               Développeur Web Freelance & Consultant Digital
             </p>
-            <p className="text-center text-gray-600 text-sm mt-3">
+            <p className="text-center text-gray-600 dark:text-gray-400 text-sm mt-3">
               Expert en HTML5, CSS3, JavaScript, React, Next.js, Tailwind CSS, Git & GitHub, SEO, UI/UX Design. J'accompagne les entreprises dans leur transformation numérique avec des solutions web innovantes et sur-mesure.
             </p>
             <div className="grid grid-cols-2 gap-4 mt-8 w-full">
