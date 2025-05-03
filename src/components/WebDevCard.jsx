@@ -1,4 +1,4 @@
-import { Phone, Mail, Globe, Github, Linkedin, MessageCircle } from "lucide-react";
+import { Phone, Mail, Globe, Github, Linkedin, MessageCircle, FileText } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function WebDevCard() {
@@ -17,12 +17,12 @@ export default function WebDevCard() {
               initial={{ rotate: -10 }}
               animate={{ rotate: 0 }}
               transition={{ type: "spring", stiffness: 120 }}
-              className="w-36 h-36 rounded-full overflow-hidden border-4 border-indigo-500 shadow-xl mb-4"
+              className="w-40 h-40 rounded-full overflow-hidden border-4 border-indigo-500 shadow-xl mb-4 hover:scale-105 transition-transform duration-500"
             >
               <img
                 src="/profile.jpg"
                 alt="Laurent Mamba"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover"
               />
             </motion.div>
             <motion.h1
@@ -37,7 +37,7 @@ export default function WebDevCard() {
               Développeur Web Freelance & Consultant Digital
             </p>
             <p className="text-center text-gray-600 text-sm mt-3">
-              Expert en React, Next.js, Tailwind CSS, HTML5, CSS3, JavaScript. Je conçois des solutions web modernes, performantes et orientées utilisateur avec un accompagnement stratégique digital.
+              Expert en HTML5, CSS3, JavaScript, React, Next.js, Tailwind CSS, Git & GitHub, SEO, UI/UX Design. J'accompagne les entreprises dans leur transformation numérique avec des solutions web innovantes et sur-mesure.
             </p>
             <div className="grid grid-cols-2 gap-4 mt-8 w-full">
               <a href="tel:+243894797454" className="w-full flex items-center justify-center bg-indigo-600 text-white rounded-xl py-2 px-4 text-sm hover:bg-indigo-700 transition">
@@ -49,14 +49,17 @@ export default function WebDevCard() {
               <a href="https://wa.me/243816366576" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center bg-green-500 text-white rounded-xl py-2 px-4 text-sm hover:bg-green-600 transition">
                 <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center bg-gray-800 text-white rounded-xl py-2 px-4 text-sm hover:bg-gray-900 transition">
+              <a href="https://github.com/DIGITALSCHOOL025" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center bg-gray-800 text-white rounded-xl py-2 px-4 text-sm hover:bg-gray-900 transition">
                 <Github className="mr-2 h-4 w-4" /> GitHub
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center bg-blue-700 text-white rounded-xl py-2 px-4 text-sm hover:bg-blue-800 transition">
                 <Linkedin className="mr-2 h-4 w-4" /> LinkedIn
               </a>
-              <a href="#" className="col-span-2 w-full flex items-center justify-center bg-purple-600 text-white rounded-xl py-2 px-4 text-sm hover:bg-purple-700 transition">
+              <a href="#" className="w-full flex items-center justify-center bg-purple-600 text-white rounded-xl py-2 px-4 text-sm hover:bg-purple-700 transition col-span-2">
                 <Globe className="mr-2 h-4 w-4" /> Portfolio
+              </a>
+              <a href="#" className="w-full flex items-center justify-center bg-yellow-500 text-white rounded-xl py-2 px-4 text-sm hover:bg-yellow-600 transition col-span-2">
+                <FileText className="mr-2 h-4 w-4" /> Voir mon CV
               </a>
             </div>
           </div>
