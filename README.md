@@ -4,7 +4,7 @@ Bienvenue sur mon projet de carte de visite numérique réalisé avec **Vite**, 
 
 ## 📅 Aperçu
 
-Lien de démo : https://visit-laurent.netlify.app
+Lien de démo : https://visit-laurent.netlify.Appel
 (./screenshot.png) <!-- Ajoute une capture d'écran si disponible -->
 
 ---
@@ -65,13 +65,16 @@ Fichier de configuration utilisé : `netlify.toml`
 **Laurent Mamba**
 Développeur Web Freelance & Consultant Digital
 Compétences : HTML5, CSS3, JavaScript, React, Git, SEO, UI/UX, Python
-Email : [mambalaurent009@gmail.com](mailto:mambalaurent009@gmail.com)
+📩 Email professionnel : masqué via variable d'environnement
+📞 Téléphone professionnel : masqué via variable d'environnement
 
 ---
 
 ## ⚠️ Sécurité & Confidentialité
 
-Ce projet ne contient **aucune donnée sensible** ou **clef d'API**. Tous les fichiers de configuration confidentiels doivent être placés dans un `.gitignore` approprié si nécessaire.
+Certaines données comme l'email, numéro de téléphone ou liens privés sont désormais stockées dans un fichier `.env` local et **non publiées sur GitHub** grâce à `.gitignore`.
+
+> Ne jamais publier de données sensibles (emails privés, numéros, clés d'API) dans un dépôt public.
 
 ---
 
