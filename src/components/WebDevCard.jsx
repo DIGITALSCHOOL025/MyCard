@@ -42,15 +42,22 @@ export default function WebDevCard() {
               Expert en HTML5, CSS3, JavaScript, Php, Python, React, Next.js, Tailwind CSS, Git & GitHub, SEO, UI/UX Design. J'accompagne les entreprises dans leur transformation numérique avec des solutions web innovantes et sur-mesure.
             </p>
             <div className="contact-links">
-              <a href="tel:+243894797454" className="link call">
-                <Phone className="icon" /> Appeler
-              </a>
-              <a href="mailto:mambalaurent009@gmail.com" className="link email">
-                <Mail className="icon" /> Email
-              </a>
-              <a href="https://wa.me/243816366576" target="_blank" rel="noopener noreferrer" className="link whatsapp">
-                <MessageCircle className="icon" /> WhatsApp
-              </a>
+              <a href={`tel:${import.meta.env.VITE_PHONE}`} className="link call">
+				  <Phone className="icon" /> Appeler
+			  </a>
+			  <a href={`mailto:${import.meta.env.VITE_EMAIL}`} className="link email">
+				  <Mail className="icon" /> Email
+			  </a>
+
+              <a
+				  href={`https://wa.me/${import.meta.env.VITE_WHATSAPP}`}
+				  className="link whatsapp"
+				  target="_blank"
+				  rel="noopener noreferrer"
+				>
+				  <MessageCircle className="icon" /> WhatsApp
+			  </a>
+
               <a href="https://github.com/DIGITALSCHOOL025" target="_blank" rel="noopener noreferrer" className="link github">
                 <Github className="icon" /> GitHub
               </a>
