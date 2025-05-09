@@ -61,10 +61,10 @@ export default function WebDevCard() {
               <a href="https://github.com/DIGITALSCHOOL025" target="_blank" rel="noopener noreferrer" className="link github">
                 <Github className="icon" /> GitHub
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="link linkedin">
+              <a href="https://www.linkedin.com/in/laurent-mamba-573b18350" target="_blank" rel="noopener noreferrer" className="link linkedin">
                 <Linkedin className="icon" /> LinkedIn
               </a>
-              <a href="#" className="link portfolio">
+              <a href="https://portfo-laurent.netlify.app" className="link portfolio">
                 <Globe className="icon" /> Portfolio
               </a>
             </div>
